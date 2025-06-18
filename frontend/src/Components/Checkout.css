@@ -1,0 +1,103 @@
+.checkout-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.checkout-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.checkout-details {
+  flex: 1;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.quantity-controls button {
+  padding: 0.3rem 0.8rem;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  color: crimson;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.checkout-btn {
+  background-color: crimson;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.loading-section {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.spinner {
+  margin: 1rem auto;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4caf50;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .checkout-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkout-image {
+    margin-bottom: 1rem;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+}
+

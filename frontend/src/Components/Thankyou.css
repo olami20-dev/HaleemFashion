@@ -1,0 +1,25 @@
+.thank-you-container {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.thank-you-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.thank-you-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.back-home-btn {
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  background-color: crimson;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+
+}
